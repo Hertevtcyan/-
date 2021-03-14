@@ -32,9 +32,7 @@ body{
     clear: both;
     content: " ";
 }
-.body-wrap{
-    /*overflow-x: hidden;*/
-}
+
 
 .mouse_moved {
     position: fixed;
@@ -64,14 +62,14 @@ header{
     left: 0;
     width: 100%;
     /*border-top: 6px solid #FAF8F8;*/
-    background: url("Project_Name/img/scriptes/png/header-bg-top.png") repeat-x rgba(0,46,58,0.61);
+    background: url("../img/scriptes/png/header-bg-top.png") repeat-x rgba(0,46,58,0.61);
     padding-top: 6px;
     padding-bottom: 5px;
     z-index: 10;
 }
 .header__logo{
     float: left;
-    background: url("Project_Name/img/scriptes/png/logo.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/logo.png") no-repeat 0 0;
     width: 217px;
     height: 69px;
 }
@@ -112,7 +110,7 @@ header{
 }
 .header__block:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/icon-header.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/icon-header.png") no-repeat 0 0;
     width: 54px;
     height: 44px;
     position: absolute;
@@ -126,17 +124,17 @@ header{
 
 
 /* section1 */
-.section1{
+#section1{
     padding-top: 112px;
     padding-bottom: 20px;
-    background: url("Project_Name/img/scriptes/png/bg-sect1.jpg") no-repeat center bottom;
+    background: url("../img/scriptes/png/bg-sect1.jpg") no-repeat center bottom;
     position: relative;
     z-index: 2;
     min-height: 744px;
 }
-.section1:before{
+#section1:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/for-form1.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/for-form1.png") no-repeat 0 0;
     width: 499px;
     height: 73px;
     position: absolute;
@@ -193,12 +191,12 @@ header{
     /**/
     padding: 3px 0 10px 64px;
     position: relative;
-    background: url("Project_Name/img/scriptes/png/do-bg-bottom.png") no-repeat left bottom;
+    background: url("../img/scriptes/png/do-bg-bottom.png") no-repeat left bottom;
     min-height: 46px;
 }
 .section1-left .do:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/icon-do.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/icon-do.png") no-repeat 0 0;
     width: 46px;
     height: 46px;
     position: absolute;
@@ -245,7 +243,7 @@ header{
     padding: 12px 6px 0 0;
     position: relative;
     z-index: 1;
-    background: url("Project_Name/img/scriptes/png/sale-bg.png") no-repeat center top;
+    background: url("../img/scriptes/png/sale-bg.png") no-repeat center top;
     width: 104px;
     height: 123px;
     text-align: center;
@@ -269,7 +267,7 @@ header{
     top: 17px;
     left: -51px;
     z-index: -1;
-    background: url(Project_Name/img/scriptes/png/product.png) no-repeat 0 0;
+    background: url(../img/scriptes/png/product.png) no-repeat 0 0;
     width: 324px;
     height: 383px;
     background-size: cover;
@@ -283,7 +281,7 @@ header{
     margin-right: 14px;
     width: 276px;
     padding: 4px;
-    background: url("Project_Name/img/scriptes/png/bg-small-form-top.png") repeat;
+    background: url("../img/scriptes/png/bg-small-form-top.png") repeat;
     -webkit-box-shadow: 5px 6px 9px 0 rgba(0,0,0,0.5);
     -moz-box-shadow: 5px 6px 9px 0 rgba(0,0,0,0.5);
     box-shadow: 5px 6px 9px 0 rgba(0,0,0,0.5);
@@ -408,13 +406,13 @@ select{
 .input-form:-moz-placeholder           {color:#808080;}/* Firefox 18- */
 .input-form:-ms-input-placeholder      {color:#808080;}
 
-.submit-form{
+.button{
     width: 100%;
     border: none;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
-    background: url("Project_Name/img/scriptes/png/bg-submit.png") repeat-x;
+    background: url("../img/scriptes/png/bg-submit.png") repeat-x;
     height: 72px;
     color: #fff;
     font-size: 24px;
@@ -433,7 +431,7 @@ select{
     font-size: 12px;
     line-height: 12px;
     padding: 6px 73px 0 0;
-    background: url("Project_Name/img/scriptes/png/protect.png") no-repeat right top;
+    background: url("../img/scriptes/png/protect.png") no-repeat right top;
     min-height: 22px;
     margin: 12px 15px 0;
 }
@@ -446,7 +444,7 @@ select{
 .section2{
     padding-top: 28px;
     padding-bottom: 55px;
-    background: url("Project_Name/img/scriptes/png/bg-sect2.jpg") no-repeat center 32px;
+    background: url("../img/scriptes/png/bg-sect2.jpg") no-repeat center 32px;
     position: relative;
     z-index: 3;
 }
@@ -472,7 +470,7 @@ select{
 }
 .reasons-block:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/reasons-img.png") no-repeat;
+    background: url("../img/scriptes/png/reasons-img.png") no-repeat;
     width: 93px;
     height: 93px;
     position: absolute;
@@ -504,11 +502,11 @@ svg{
 .section3{
     padding-top: 38px;
     padding-bottom: 10px;
-    background: url("Project_Name/img/scriptes/png/bg-sect3.jpg") no-repeat center top #F4F5F4;
+    background: url("../img/scriptes/png/bg-sect3.jpg") no-repeat center top #F4F5F4;
     min-height: 543px;
 }
 .complications-wrap{
-    background: url("Project_Name/img/scriptes/png/complications-bg.png") repeat-y;
+    background: url("../img/scriptes/png/complications-bg.png") repeat-y;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -523,7 +521,7 @@ svg{
 .complications-text{
     font-size: 24px;
     line-height: 26px;
-    background: url("Project_Name/img/scriptes/png/complications-danger.png") no-repeat left top;
+    background: url("../img/scriptes/png/complications-danger.png") no-repeat left top;
     padding: 15px 0 30px 60px;
     min-height: 36px;
 }
@@ -542,7 +540,7 @@ svg{
 
 /*text-bg1-wrap*/
 .text-bg1-wrap{
-    background: url("Project_Name/img/scriptes/png/text-bg1.png") repeat;
+    background: url("../img/scriptes/png/text-bg1.png") repeat;
 }
 .text-bg1{
     font-size: 32px;
@@ -561,7 +559,7 @@ svg{
 .section4{
     padding-top: 45px;
     padding-bottom: 10px;
-    background: url("Project_Name/img/scriptes/png/bg-sect4.jpg") no-repeat center top #E6E5E9;
+    background: url("../img/scriptes/png/bg-sect4.jpg") no-repeat center top #E6E5E9;
     min-height: 558px;
 }
 .section4 .title{
@@ -572,7 +570,7 @@ svg{
     line-height: 28px;
     padding: 3px;
     margin: 29px 15px 0 246px;
-    background: url("Project_Name/img/scriptes/png/bg-small-laboratory.png") repeat;
+    background: url("../img/scriptes/png/bg-small-laboratory.png") repeat;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -581,7 +579,7 @@ svg{
 }
 .laboratory-block:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/device-img.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/device-img.png") no-repeat 0 0;
     width: 251px;
     height: 374px;
     position: absolute;
@@ -601,7 +599,7 @@ svg{
 }
 .laboratory-img:after{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/under-device.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/under-device.png") no-repeat 0 0;
     width: 210px;
     height: 225px;
     position: absolute;
@@ -635,7 +633,7 @@ svg{
 .section5{
     padding-top: 48px;
     padding-bottom: 65px;
-    background: url("Project_Name/img/scriptes/png/bg-sect5.png") no-repeat center bottom #FBFBFE;
+    background: url("../img/scriptes/png/bg-sect5.png") no-repeat center bottom #FBFBFE;
 }
 .action-wrap{
     padding: 38px 50px 0;
@@ -656,7 +654,7 @@ svg{
 }
 .action-left:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/product-action.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/product-action.png") no-repeat 0 0;
     width: 335px;
     height: 410px;
     position: absolute;
@@ -673,10 +671,10 @@ svg{
     z-index: 2;
 }
 .action-left .action-block{
-    background: url("Project_Name/img/scriptes/png/action-bg-left.png") repeat-y left 0;
+    background: url("../img/scriptes/png/action-bg-left.png") repeat-y left 0;
 }
 .action-right .action-block{
-    background: url("Project_Name/img/scriptes/png/action-bg-right.png") repeat-y right 0;
+    background: url("../img/scriptes/png/action-bg-right.png") repeat-y right 0;
 }
 .action-block--1{
     margin-bottom: 16px;
@@ -737,7 +735,7 @@ svg{
     margin-bottom: 50px;
 }
 .additional__item{
-    background: url("Project_Name/img/scriptes/png/aditional.png") top center no-repeat;
+    background: url("../img/scriptes/png/aditional.png") top center no-repeat;
     padding-top: 73px;
     display: inline-block;
     text-align: center;
@@ -760,12 +758,12 @@ svg{
 .section6{
     padding-top: 20px;
     padding-bottom: 39px;
-    background: url("Project_Name/img/scriptes/png/bg-sect6.jpg") no-repeat center 15px #fff;
+    background: url("../img/scriptes/png/bg-sect6.jpg") no-repeat center 15px #fff;
 }
 .expert-wrap-main{
     margin: 32px 48px 0;
     padding: 9px;
-    background: url("Project_Name/img/scriptes/png/bg-small.png") repeat;
+    background: url("../img/scriptes/png/bg-small.png") repeat;
     -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
     -moz-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
     box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
@@ -782,7 +780,7 @@ svg{
 }
 .expert-wrap:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/expert.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/expert.png") no-repeat 0 0;
     width: 374px;
     height: 499px;
     position: absolute;
@@ -810,11 +808,11 @@ svg{
 .section7{
     padding-top: 50px;
     padding-bottom: 40px;
-    background: url("Project_Name/img/scriptes/png/bg-sect7.jpg") no-repeat center top #033439;
+    background: url("../img/scriptes/png/bg-sect7.jpg") no-repeat center top #033439;
 	background-size: cover;
 }
 .form-wrapper{
-    background: url("Project_Name/img/scriptes/png/form2-bg.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/form2-bg.png") no-repeat 0 0;
     min-height: 362px;
     margin: 0 16px;
     -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
@@ -854,7 +852,7 @@ svg{
     padding: 12px 6px 0 0;
     position: relative;
     z-index: 1;
-    background: url("Project_Name/img/scriptes/png/sale-bg--all.png") no-repeat center top;
+    background: url("../img/scriptes/png/sale-bg--all.png") no-repeat center top;
     width: 121px;
     height: 143px;
     text-align: center;
@@ -965,7 +963,7 @@ svg{
 }
 .form-center--all:before{
        content: " ";
-    background: url(Project_Name/img/scriptes/png/product-2.png) no-repeat 0 0;
+    background: url(../img/scriptes/png/product-2.png) no-repeat 0 0;
     width: 317px;
     height: 387px;
     position: absolute;
@@ -1019,8 +1017,22 @@ svg{
     line-height: 17px;
     margin-bottom: 24px;
 }
-.submit-form--all {
-    background: url("Project_Name/img/scriptes/png/bg-submit--all.png") repeat-x;
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.popup {
+		width: 100%;
+		height: 100vh;
+		font-size: 15px;
+	}
+}
+
+
+.button{
+    background: url("../img/scriptes/png/bg-submit--all.png") repeat-x;
     height: 78px;
     font-size: 30px;
     line-height: 30px;
@@ -1032,7 +1044,7 @@ svg{
     font-size: 14px;
     line-height: 14px;
     padding: 7px 78px 0 0;
-    background: url("Project_Name/img/scriptes/png/protect-2.png") no-repeat right top;
+    background: url("../img/scriptes/png/protect-2.png") no-repeat right top;
     min-height: 26px;
     margin-top: 12px;
     margin-right: 21px;
@@ -1055,7 +1067,7 @@ svg{
 .section8{
     padding-top: 32px;
     padding-bottom: 52px;
-    background: url("Project_Name/img/scriptes/png/bg-sect8.jpg") repeat-y center top;
+    background: url("../img/scriptes/png/bg-sect8.jpg") repeat-y center top;
 }
 .slider-wrapper{
     padding: 22px 60px 0;
@@ -1124,11 +1136,11 @@ svg{
 }
 .bx-wrapper .bx-prev {
     left: -60px;
-    background: url("Project_Name/img/scriptes/png/prev.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/prev.png") no-repeat 0 0;
 }
 .bx-wrapper .bx-next {
     right: -60px;
-    background: url("Project_Name/img/scriptes/png/next.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/next.png") no-repeat 0 0;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-next:hover{
@@ -1145,7 +1157,7 @@ svg{
 .section9{
     padding-top: 30px;
     padding-bottom: 82px;
-    background: url("Project_Name/img/scriptes/png/bg-sect9.png") no-repeat center bottom;
+    background: url("../img/scriptes/png/bg-sect9.png") no-repeat center bottom;
     position: relative;
     z-index: 5;
 }
@@ -1168,7 +1180,7 @@ svg{
 }
 .use-block:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/use-img.png") no-repeat;
+    background: url("../img/scriptes/png/use-img.png") no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -1205,7 +1217,7 @@ svg{
 .fake-wrapper-main{
     padding: 0 9px 9px;
     margin: 0 48px;
-    background: url("Project_Name/img/scriptes/png/bg-small.png") repeat;
+    background: url("../img/scriptes/png/bg-small.png") repeat;
     -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
     -moz-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
     box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.43);
@@ -1230,7 +1242,7 @@ svg{
 }
 .fake-img{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/product-fake.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/product-fake.png") no-repeat 0 0;
     width: 279px;
     height: 275px;
     position: absolute;
@@ -1239,7 +1251,7 @@ svg{
 }
 .fake-img:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/arrow-fake.png") no-repeat 0 0;
+    background: url("../img/scriptes/png/arrow-fake.png") no-repeat 0 0;
     width: 74px;
     height: 46px;
     position: absolute;
@@ -1314,7 +1326,7 @@ svg{
 }
 .work-block:before{
     content: " ";
-    background: url("Project_Name/img/scriptes/png/work-img.png") no-repeat;
+    background: url("../img/scriptes/png/work-img.png") no-repeat;
     width: 191px;
     height: 188px;
     position: absolute;
@@ -1324,15 +1336,15 @@ svg{
 }
 .work-block--1.work-block:before{
     /*background-position: 0 0;*/
-    background: url("Project_Name/img/scriptes/png/work-img-1.png") 0 0 no-repeat;
+    background: url("../img/scriptes/png/work-img-1.png") 0 0 no-repeat;
 }
 .work-block--2.work-block:before{
     /*background-position: -190px 0;*/
-    background: url("Project_Name/img/scriptes/png/work-img-2.png") 0 0 no-repeat;
+    background: url("../img/scriptes/png/work-img-2.png") 0 0 no-repeat;
 }
 .work-block--3.work-block:before{
     /*background-position: -380px 0;*/
-    background: url("Project_Name/img/scriptes/png/work-img-3.png") 0 0 no-repeat;
+    background: url("../img/scriptes/png/work-img-3.png") 0 0 no-repeat;
 }
 .work-prof{
     font-size: 26px;
@@ -1358,7 +1370,7 @@ svg{
 /* section12 */
 .section12{
     padding-top: 30px;
-    background: url("Project_Name/img/scriptes/png/bg-sect12.jpg") no-repeat center top #053D45;
+    background: url("../img/scriptes/png/bg-sect12.jpg") no-repeat center top #053D45;
 }
 .map-wrap{
     padding-top: 15px;
@@ -1382,7 +1394,7 @@ svg{
 .footer-left{
     float: left;
     padding-left: 75px;
-    background: url("Project_Name/img/scriptes/png/logo2.png") 5% 0 no-repeat;
+    background: url("../img/scriptes/png/logo2.png") 5% 0 no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
 }
@@ -1401,53 +1413,6 @@ svg{
 .hide-forever{
     display: none !important;
 }
-
-
-/*popup*/
-.popup-callback, .popup-phone, .modal_mouse_out {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow: auto!important;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: rgba(25,25,25, 0.8);
-}
-.close-modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 101;
-    cursor: pointer;
-}
-.close-img, .close-phone, .close-mouse {
-    content: " ";
-    position: absolute;
-    background: url("Project_Name/img/scriptes/png/close.png") no-repeat 0 0;
-    width: 32px;
-    height: 32px;
-    top: -6px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 103;
-}
-.mod {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin-bottom: 20px;
-    z-index: 102;
-    width: 960px;
-}
-/*end popup*/
-
 
 
 
@@ -1512,7 +1477,7 @@ svg{
         width: 420px;
         min-height: 3px;
         padding: 4px;
-        background: url("Project_Name/img/scriptes/png/bg-small-form-top.png") repeat;
+        background: url("../img/scriptes/png/bg-small-form-top.png") repeat;
         -webkit-box-shadow: 0 6px 9px 0 rgba(0,0,0,0.5);
         -moz-box-shadow: 0 6px 9px 0 rgba(0,0,0,0.5);
         box-shadow: 0 6px 9px 0 rgba(0,0,0,0.5);
@@ -1530,7 +1495,7 @@ svg{
     }
     .sale--mob:before{
        content: " ";
-    background: url(Project_Name/img/scriptes/png/product-mob.png) no-repeat 0 0;
+    background: url(../img/scriptes/png/product-mob.png) no-repeat 0 0;
     width: 224px;
     height: 248px;
     position: absolute;
@@ -1543,7 +1508,7 @@ svg{
         padding: 13px 6px 0 5px;
         position: relative;
         z-index: 1;
-        background: url("Project_Name/img/scriptes/png/product-mob.png") no-repeat center top;
+        background: url("../img/scriptes/png/product-mob.png") no-repeat center top;
         width: 144px;
         height: 156px;
         text-align: center;
@@ -1648,7 +1613,7 @@ svg{
         font-size: 18px;
         line-height: 18px;
         padding: 9px 112px 0 0;
-        background: url("Project_Name/img/scriptes/png/protect-480.png") no-repeat right top;
+        background: url("../img/scriptes/png/protect-480.png") no-repeat right top;
         min-height: 34px;
         margin: 17px 26px 0;
 
@@ -1806,7 +1771,7 @@ svg{
         width: 470px;
     }
     header {
-        background: url("Project_Name/img/scriptes/png/header-bg-top.png") repeat-x 0 -2px;
+        background: url("../img/scriptes/png/header-bg-top.png") repeat-x 0 -2px;
         padding-top: 4px;
         padding-bottom: 5px;
     }
@@ -1878,7 +1843,7 @@ svg{
     }
 
     .reasons-block:before {
-        background: url("Project_Name/img/scriptes/png/reasons-img-480.png") no-repeat;
+        background: url("../img/scriptes/png/reasons-img-480.png") no-repeat;
         /*width: 130px;*/
         /*height: 129px;*/
         width: 125px;
@@ -1888,18 +1853,7 @@ svg{
         background-size: cover !important;
         /*margin-left: -65px;*/
     }
-    .reasons-block--2.reasons-block:before {
-        /*background-position: -130px 0;*/
-    }
-    .reasons-block--3.reasons-block:before {
-        /*background-position: -260px 0;*/
-    }
-    .reasons-block--4.reasons-block:before {
-        /*background-position: -390px 0;*/
-    }
-    .reasons-block--5.reasons-block:before {
-        /*background-position: -520px 0;*/
-    }
+  
     .title {
         font-size: 36px;
         line-height: 45px;
@@ -1907,7 +1861,7 @@ svg{
     .section3 {
         padding-top: 50px;
         padding-bottom: 42px;
-        background: url("Project_Name/img/scriptes/png/bg-sect3-480.jpg") no-repeat center bottom #F4F5F4;
+        background: url("../img/scriptes/png/bg-sect3-480.jpg") no-repeat center bottom #F4F5F4;
         background-size: cover;
     }
     .complications-wrap {
@@ -1917,7 +1871,7 @@ svg{
     .section4 {
         padding-top: 50px;
         padding-bottom: 215px;
-        background: url("Project_Name/img/scriptes/png/bg-sect4-480.jpg") no-repeat center bottom #E8EBF2;
+        background: url("../img/scriptes/png/bg-sect4-480.jpg") no-repeat center bottom #E8EBF2;
         background-size: cover;
     }
     .laboratory-block {
@@ -1932,7 +1886,7 @@ svg{
     }
     .laboratory-block:after {
         content: " ";
-        background: url("Project_Name/img/scriptes/png/under-device.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/under-device.png") no-repeat 0 0;
         width: 210px;
         height: 225px;
         position: absolute;
@@ -1953,7 +1907,7 @@ svg{
     .section5 {
         padding-top: 40px;
         padding-bottom: 395px;
-        background: url("Project_Name/img/scriptes/png/triangle_bg.jpg") no-repeat center bottom #fff;
+        background: url("../img/scriptes/png/triangle_bg.jpg") no-repeat center bottom #fff;
         background-size: contain;
     }
 
@@ -2032,13 +1986,13 @@ svg{
     }
    
     .slide-img--1{
-        background: url("Project_Name/img/scriptes/png/slide-img1-480.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img1-480.png") no-repeat center top;
     }
     .slide-img--2{
-        background: url("Project_Name/img/scriptes/png/slide-img2-480.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img2-480.png") no-repeat center top;
     }
     .slide-img--3{
-        background: url("Project_Name/img/scriptes/png/slide-img3-480.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img3-480.png") no-repeat center top;
     }
     .text-wrap-slide {
         padding: 41px 10px 40px;
@@ -2056,11 +2010,11 @@ svg{
     }
     .bx-wrapper .bx-prev {
         left: 1px;
-        background: url("Project_Name/img/scriptes/png/prev-480.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/prev-480.png") no-repeat 0 0;
     }
     .bx-wrapper .bx-next {
         right: 1px;
-        background: url("Project_Name/img/scriptes/png/next-480.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/next-480.png") no-repeat 0 0;
     }
     .section9 {
         padding-top: 33px;
@@ -2088,7 +2042,7 @@ svg{
         padding-top: 170px;
     }
     .use-block:before {
-        background: url("Project_Name/img/scriptes/png/use-img-480.png") no-repeat;
+        background: url("../img/scriptes/png/use-img-480.png") no-repeat;
         width: 135px;
         height: 142px;
         margin-left: -67px;
@@ -2111,7 +2065,7 @@ svg{
     }
     .fake-img {
         content: " ";
-        background: url("Project_Name/img/scriptes/png/product-fake-480.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/product-fake-480.png") no-repeat 0 0;
         width: 220px;
         height: 215px;
         position: absolute;
@@ -2206,24 +2160,24 @@ svg{
 
 @media screen and (max-width: 486px) {
     .section2 {
-        background: url("Project_Name/img/scriptes/png/bg-sect2-480.jpg") no-repeat center 330px;
+        background: url("../img/scriptes/png/bg-sect2-480.jpg") no-repeat center 330px;
     }
     .section4 {
         background-size: 480px;
     }
     .section7 {
-        background: url("Project_Name/img/scriptes/png/bg-sect7-480.jpg") no-repeat center top #033439;
+        background: url("../img/scriptes/png/bg-sect7-480.jpg") no-repeat center top #033439;
         background-size: cover;
     }
     .section8 {
-        background: url("Project_Name/img/scriptes/png/bg-sect8-480.jpg") no-repeat center top #EFF5F5;
+        background: url("../img/scriptes/png/bg-sect8-480.jpg") no-repeat center top #EFF5F5;
     }
     .section9 {
-        background: url("Project_Name/img/scriptes/png/bg-sect9-480.png") no-repeat center bottom;
+        background: url("../img/scriptes/png/bg-sect9-480.png") no-repeat center bottom;
         background-size: cover;
     }
     .section12 {
-        background: url("Project_Name/img/scriptes/png/bg-sect12-480.jpg") no-repeat center top #033439;
+        background: url("../img/scriptes/png/bg-sect12-480.jpg") no-repeat center top #033439;
         background-size: cover;
     }
 }
@@ -2238,7 +2192,7 @@ svg{
         width: 310px;
     }
     header {
-        background: url("Project_Name/img/scriptes/png/header-bg-top.png") repeat-x 0 0;
+        background: url("../img/scriptes/png/header-bg-top.png") repeat-x 0 0;
         padding-top: 6px;
     }
     .header__call{display: none;}
@@ -2268,16 +2222,14 @@ svg{
         height: 100px;
         width: 310px;
 content: " ";
-    background: url(Project_Name/img/scriptes/png/product-mob.png) no-repeat 0 0;
+    background: url(../img/scriptes/png/product-mob.png) no-repeat 0 0;
     width: 224px;
     height: 248px;
     top: 0px;
     left: -4px;
     background-size: cover;
     }
-	.sale--mob:before {
-    
-}
+
     .section1-right, .form-wrapper {
         width: 300px;
     }
@@ -2359,7 +2311,7 @@ content: " ";
         line-height: 16px;
         text-align: center;
         padding: 1px 1px 26px 0;
-        background: url("Project_Name/img/scriptes/png/protect.png") no-repeat center bottom;
+        background: url("../img/scriptes/png/protect.png") no-repeat center bottom;
         min-height:22px;
         margin: 14px 10px 0;
     }
@@ -2391,23 +2343,12 @@ content: " ";
         line-height: 24px;
     }
     .reasons-block:before {
-        background: url("Project_Name/img/scriptes/png/reasons-img.png") no-repeat;
+        background: url("../img/scriptes/png/reasons-img.png") no-repeat;
         /*width: 100px;*/
         /*height: 93px;*/
         margin-left: -50px;
     }
-    .reasons-block--2.reasons-block:before {
-        /*background-position: -100px 0;*/
-    }
-    .reasons-block--3.reasons-block:before {
-        /*background-position: -200px 0;*/
-    }
-    .reasons-block--4.reasons-block:before {
-        /*background-position: -300px 0;*/
-    }
-    .reasons-block--5.reasons-block:before {
-        /*background-position: -400px 0;*/
-    }
+   
     .reasons-block {
         /*padding-top: 103px;*/
         padding-bottom: 42px;
@@ -2419,12 +2360,12 @@ content: " ";
     .complications-wrap {
         margin: 30px 6px 0;
         padding: 32px 1px 0 25px;
-        background: url("Project_Name/img/scriptes/png/complications-bg-240.png") repeat-x;
+        background: url("../img/scriptes/png/complications-bg-240.png") repeat-x;
     }
     .complications-text {
         font-size: 20px;
         line-height: 21px;
-        background: url("Project_Name/img/scriptes/png/complications-danger-240.png") no-repeat left top;
+        background: url("../img/scriptes/png/complications-danger-240.png") no-repeat left top;
         padding: 9px 0 25px 48px;
         min-height: 27px;
     }
@@ -2497,10 +2438,10 @@ content: " ";
         text-align: center;
     }
     .bx-wrapper .bx-prev {
-        background: url("Project_Name/img/scriptes/png/prev.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/prev.png") no-repeat 0 0;
     }
     .bx-wrapper .bx-next {
-        background: url("Project_Name/img/scriptes/png/next.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/next.png") no-repeat 0 0;
     }
     .bx-wrapper .bx-controls-direction a {
         top: 84px;
@@ -2541,7 +2482,7 @@ content: " ";
         padding-bottom: 60px;
     }
     .use-block:before {
-        background: url("Project_Name/img/scriptes/png/use-img.png") no-repeat;
+        background: url("../img/scriptes/png/use-img.png") no-repeat;
         width: 100px;
         height: 100px;
         margin-left: -50px;
@@ -2644,7 +2585,7 @@ content: " ";
     }
     .sale-wrap--mob {
         padding: 10px 4px 0;
-        background: url("Project_Name/img/scriptes/png/sale-bg--mob-240.png") no-repeat center top;
+        background: url("../img/scriptes/png/sale-bg--mob-240.png") no-repeat center top;
         width: 114px;
         height: 124px;
     }
@@ -2727,7 +2668,7 @@ content: " ";
     .section3 {
         padding-top: 28px;
         padding-bottom: 30px;
-        background: url("Project_Name/img/scriptes/png/bg-sect3-240.jpg") no-repeat center bottom #F4F5F4;
+        background: url("../img/scriptes/png/bg-sect3-240.jpg") no-repeat center bottom #F4F5F4;
         background-size: cover;
     }
     .section3 .title{
@@ -2758,7 +2699,7 @@ content: " ";
     .section4 {
         padding-top: 35px;
         padding-bottom: 226px;
-        background: url("Project_Name/img/scriptes/png/bg-sect4-240.jpg") no-repeat center bottom #E8EBF2;
+        background: url("../img/scriptes/png/bg-sect4-240.jpg") no-repeat center bottom #E8EBF2;
         background-size: cover;
     }
     .laboratory-block {
@@ -2774,7 +2715,7 @@ content: " ";
         bottom: -210px;
         width: 145px;
         height: 220px;
-        background: url("Project_Name/img/scriptes/png/device-img-240.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/device-img-240.png") no-repeat 0 0;
     }
     .laboratory-block:after {
         display: none;
@@ -2784,7 +2725,7 @@ content: " ";
     }
     .section4 .wrapper:before{
         content: " ";
-        background: url("Project_Name/img/scriptes/png/under-device.png") no-repeat 0 0;
+        background: url("../img/scriptes/png/under-device.png") no-repeat 0 0;
         width: 120px;
         height: 180px;
         position: absolute;
@@ -2847,7 +2788,7 @@ content: " ";
     .section5 {
         padding-top: 30px;
         padding-bottom: 45px;
-        background: url("Project_Name/img/scriptes/png/bg-sect5-240.jpg") no-repeat center bottom #FBFBFE;
+        background: url("../img/scriptes/png/bg-sect5-240.jpg") no-repeat center bottom #FBFBFE;
         background-size: cover;
     }
     .action-left .action-number {
@@ -2889,22 +2830,20 @@ content: " ";
         padding-top: 35px;
         padding-bottom: 62px;
     }
-    .slide-img img {
-        
-    }
+    
     .slide-img {
         height: 160px;
 		width: 100%;
 		text-align: center;
     }
     .slide-img--1 {
-        background: url("Project_Name/img/scriptes/png/slide-img1-240.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img1-240.png") no-repeat center top;
     }
     .slide-img--2 {
-        background: url("Project_Name/img/scriptes/png/slide-img2-240.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img2-240.png") no-repeat center top;
     }
     .slide-img--3 {
-        background: url("Project_Name/img/scriptes/png/slide-img3-240.png") no-repeat center top;
+        background: url("../img/scriptes/png/slide-img3-240.png") no-repeat center top;
     }
     .section8 .title {
         font-size: 36px;
@@ -2943,7 +2882,7 @@ content: " ";
     .section9 {
         padding-top: 25px;
         padding-bottom: 3px;
-        background: url("Project_Name/img/scriptes/png/bg-sect9-240.png") no-repeat center bottom;
+        background: url("../img/scriptes/png/bg-sect9-240.png") no-repeat center bottom;
         background-size: cover;
     }
     .use-wrap {
@@ -3015,11 +2954,11 @@ content: " ";
     }
     .section12 {
         padding-top: 30px;
-        background: url("Project_Name/img/scriptes/png/bg-sect7-240.jpg") no-repeat center top #033439;
+        background: url("../img/scriptes/png/bg-sect7-240.jpg") no-repeat center top #033439;
         background-size: cover;
     }
     .section7 {
-        background: url("Project_Name/img/scriptes/png/bg-sect7-240.jpg") no-repeat center top #033439;
+        background: url("../img/scriptes/png/bg-sect7-240.jpg") no-repeat center top #033439;
         background-size: cover;
     }
     .footer {
@@ -3092,9 +3031,8 @@ content: " ";
     height: 29px;
     width: 29px;
     cursor: pointer;
-    background: url(Project_Name/img/scriptes/png/img_close-conf.png) no-repeat
+    background: url(../img/scriptes/png/img_close-conf.png) no-repeat
 }
-
 
 
 
@@ -3105,6 +3043,70 @@ content: " ";
         background-size: 240px;
     }
     .section2 {
-        background: url("Project_Name/img/scriptes/png/bg-sect2-240.jpg") no-repeat center 95px;
+        background: url("../img/scriptes/png/bg-sect2-240.jpg") no-repeat center 95px;
     }
+}
+
+
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #ff5252;
+	color: #fff;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.popup {
+		width: 100%;
+		height: 100vh;
+		font-size: 15px;
+	}
 }

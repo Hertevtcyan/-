@@ -5,25 +5,13 @@
 <head lang="ru">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="Project_Name/css/everad.css">
-    <link rel="stylesheet" href="Project_Name/css/message.css">
     <link rel="stylesheet" href="Project_Name/css/phone.css">
-    <link href="style.css" rel="stylesheet"> 
+    <link href="Project_Name/css/style.css" rel="stylesheet"> 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script charset="utf-8" src="http://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-    <script>
-        $.get("http://ipinfo.io", function (response) {
-if(response.city === "Rossia"){
- $("#address").html("Средство №1 в" + response.region + " " + response.city);
-}
-else{
- $("#address").html("Страны СНГ")
-}
-   
-}, "jsonp");
-    </script>
     <title>Купить Диалайн недорого. Цены, отзывы. Закажите Диалайн сейчас!</title>
 </head>
 
@@ -43,7 +31,7 @@ else{
             </div>
         </header>
         <!--section1-->
-        <div class="section1">
+        <div id="section1">
             <div class="wrapper">
                 <p class="main-title">Диалайн – двойной удар по диабету</p>
                 <p class="title-small">Средство №1 в России стабилизирующее выработку инсулина и уровень фосфора в организме</p>
@@ -92,8 +80,8 @@ else{
                                     <p class="price-old-x--top">
                                       <script>
                                           let currentdate = new Date(); 
-                                                let datetime = currentdate.getDate() + "/"
-                                                            + (currentdate.getMonth()+1)  + "/" 
+                                                let datetime = currentdate.getDate() + "-"
+                                                            + (currentdate.getMonth()+1)  + "-" 
                                                             + currentdate.getFullYear()
 
                                             document.write(datetime);
@@ -120,7 +108,7 @@ else{
                                           });
                                         });
                                         </script>
-                                    <button class="submit-form" type="submit">Получить<br>Диалайн</button>
+                                    <button class="button js-button-campaign" type="submit">Получить<br>Диалайн</button>
                                     
                                 </form>
                             </div>
@@ -128,6 +116,25 @@ else{
                     </div>
                 </div>
             </div>
+
+            <div class="overlay js-overlay-campaign">
+                <div class="popup js-popup-campaign">
+                    <h2>Введите ваши данные в форму ниже</h2>
+                    Диалайн – средство для борьбы с диабетом <br> Получить Диалайн
+                    <input class="input-form" type="text" name="name" placeholder="Ваше имя" >
+                                    <input class="input-form" type="text" name="phone" placeholder="Ваш номер телефона" id="phone3" >
+                                    <script>
+                                        $(function(){
+                                          $("#phone3").mask("8(999) 999-9999", {
+                                            completed: function(){ alert("Вы ввели номер: " + this.val()); }
+                                          });
+                                        });
+                                        </script>
+                                    <button class="button js-button-campaign" type="submit">Получить<br>Диалайн</button>
+                    <div class="close-popup js-close-campaign"></div>
+                </div>
+            </div>
+
         </div>
         <!--section2-->
         <div class="section2">
@@ -521,9 +528,9 @@ else{
                                 </div>
                             </div>
                             <div class="product-sh">
-                                <p class="product-how-much"><span id="timer_text">60</span></p>
+                                <p class="product-how-much"><span id="timer_text">60</span>
                                 <script type="text/javascript">
-                                    const timerText = document.getElementById("timer_text");
+                                     const timerText = document.getElementById("timer_text");
                                     let count = 60
                                     setInterval(function(){
                                         if(count != 7){
@@ -532,11 +539,9 @@ else{
                                         }else{
                                             setTimeout
                                         }
-                                       
-                                      
-                                    }, 10000)
-                                    
+                                }, 10000)
                                 </script>
+                                </p>
                                 <p class="product-sh--text">Количество товаров на
                                     <br>ближайшем к Вам складе
                                     <br>ограничено!</p>
@@ -559,7 +564,7 @@ else{
                                           });
                                         });
                                         </script>
-                                    <button class="submit-form submit-form--all" type="submit">Получить
+                                    <button class="button js-button-campaign" type="submit">Получить
                                         <br>Диалайн</button>
                                     
                                 </form>
@@ -658,7 +663,7 @@ else{
                                 <div class="wrap-price--all">
                                     <div class="price-old-wrap--all">
                                         <p class="price-old-text--top">Только до:</p>
-                                    <p class="price-old-x--top"><span class="x_price_previous "><script>d=new Date();p=new Date(d.getTime()-(0));monthA=['01','02','03','04','05','06','07','08','09','10','11','12'];document.write(p.getDate()+'.'+monthA[p.getMonth()]+'.'+p.getFullYear());</script></span> </p>
+                                    <p class="price-old-x--top"><span class="x_price_previous "></span> </p>
                                     </div>
                                     <div class="price-new-wrap--all">
                                         <p class="price-new-text--all">Цена:</p>
@@ -667,7 +672,19 @@ else{
                                 </div>
                             </div>
                             <div class="product-sh">
-                                <p class="product-how-much"><span class="lastpack">60</span></p>
+                                <p class="product-how-much"><span id="timer_text_footer">60</span>
+                                    <script type="text/javascript">
+                                        const timerTextFooter = document.getElementById("timer_text_footer");
+                                       let count2 = 60
+                                       setInterval(function(){
+                                           if(count2 != 7){
+                                               count2--;
+                                       timerTextFooter.textContent = count2
+                                           }else{
+                                               setTimeout
+                                           }
+                                   }, 10000)
+                               </script></p>
                                 <p class="product-sh--text">Количество товаров на
                                     <br>ближайшем к Вам складе
                                     <br>ограничено!</p>
@@ -690,7 +707,7 @@ else{
                                           });
                                         });
                                         </script>
-                                    <button class="submit-form submit-form--all" type="submit">Получить
+                                    <button class="button js-button-campaign" type="submit">Получить
                                         <br>Диалайн</button>
                                     
                                 </form>
@@ -708,219 +725,7 @@ else{
                 </div>
             </div>
         </div>
-          <!-- <div class="hidden-conf">
-        <div class="conf-overlay close-conf"></div>
-        <div class="conf-info">
-            <div class="conf-head">Политика конфиденциальности</div>
-            <h5>Защита личных данных</h5>
-            <p>Для защиты ваших личных данных у нас внедрен ряд средств защиты, которые действуют при введении, передаче или работе с вашими личными данными.</p>
-            <h5>Разглашение личных сведений и передача этих сведений третьим лицам</h5>
-            <p>Ваши личные сведения могут быть разглашены нами только в том случае это необходимо для: (а) обеспечения соответствия предписаниям закона или требованиям судебного процесса в нашем отношении ; (б) защиты наших прав или собственности (в) принятия срочных мер по обеспечению личной безопасности наших сотрудников или потребителей предоставляемых им услуг, а также обеспечению общественной безопасности. Личные сведения, полученные в наше распоряжение при регистрации, могут передаваться третьим организациям и лицам, состоящим с нами в партнерских отношениях для улучшения качества оказываемых услуг. Эти сведения не будут использоваться в каких-либо иных целях, кроме перечисленных выше. Адрес электронной почты, предоставленный вами при регистрации может использоваться для отправки вам сообщений или уведомлений об изменениях, связанных с вашей заявкой, а также рассылки сообщений о происходящих в компании событиях и изменениях, важной информации о новых товарах и услугах и т.д. Предусмотрена возможность отказа от подписки на эти почтовые сообщения.</p>
-            <h5>Использование файлов «cookie»</h5>
-            <p>Когда пользователь посещает веб-узел, на его компьютер записывается файл «cookie» (если пользователь разрешает прием таких файлов). Если же пользователь уже посещал данный веб-узел, файл «cookie» считывается с компьютера. Одно из направлений использования файлов «cookie» связано с тем, что с их помощью облегчается сбор статистики посещения. Эти сведения помогают определять, какая информация, отправляемая заказчикам, может представлять для них наибольший интерес. Сбор этих данных осуществляется в обобщенном виде и никогда не соотносится с личными сведениями пользователей.</p>
-            <p>Третьи стороны, включая компании Google, показывают объявления нашей компании на страницах сайтов в Интернете. Третьи стороны, включая компанию Google, используют cookie, чтобы показывать объявления, основанные на предыдущих посещениях пользователем наших вебсайтов и интересах в веб-браузерах. Пользователи могут запретить компаниям Google использовать cookie. Для этого необходимо посетить специальную страницу компании Google по этому адресу: http://www.google.com/privacy/ads/</p>
-            <h5>Изменения в заявлении о соблюдении конфиденциальности</h5>
-            <p>Заявление о соблюдении конфиденциальности предполагается периодически обновлять. При этом будет изменяться дата предыдущего обновления, указанная в начале документа. Сообщения об изменениях в данном заявлении будут размещаться на видном месте наших веб-узлов</p>
-            <p class="s1">Благодарим Вас за проявленный интерес к нашей системе! </p>
-            <div class="close-conf closeconf-but"></div>
-        </div>
-    </div> -->
 
-
-        <!--popup-callback-->
-
-
-        <!-- <div class="popup-callback">
-            <div class="close-modal"></div>
-            <div class="mod">
-                <div class="close-img"></div>
-                <div class="sale--mob">
-                    <div class="sale-wrap--mob">
-                        <p class="sale-product-title--mob">скидка!</p>
-                        <p class="sale-product--mob">-50%</p>
-                    </div>
-                    <p class="clear"></p>
-                </div>
-                <div class="form-wrapper">
-                    <div class="form-wrapper--bg">
-                        <div class="form-right--all">
-                            <p class="form-main-title--all">Диалайн – средство для
-                                <br>борьбы с диабетом</p>
-                            <div class="sale-price-wrap">
-                                <div class="sale-wrap--all">
-                                    <p class="sale-product-title--all">скидка!</p>
-                                    <p class="sale-product--all">-50%</p>
-                                </div>
-                                <div class="wrap-price--all">
-                                    <div class="price-old-wrap--all">
-                                        <p class="price-old-text--top">Только до:</p>
-                                    <p class="price-old-x--top"><span class="x_price_previous "><script>d=new Date();p=new Date(d.getTime()-(0));monthA=['01','02','03','04','05','06','07','08','09','10','11','12'];document.write(p.getDate()+'.'+monthA[p.getMonth()]+'.'+p.getFullYear());</script></span> </p>
-                                    </div>
-                                    <div class="price-new-wrap--all">
-                                        <p class="price-new-text--all">Цена:</p>
-                                        <p class="price-new-x--all"><span><span class="landing___price__main_value">0</span> <span class="landing___price__currency">руб</span></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-sh">
-                                <p class="product-how-much"><span class="lastpack">60</span></p>
-                                <p class="product-sh--text">Количество товаров на
-                                    <br>ближайшем к Вам складе
-                                    <br>ограничено!</p>
-                            </div>
-                        </div>
-                        <div class="form-center--all"></div>
-                        <div class="form-left--all">
-                            <div class="form--all">
-                                <p class="form-title--all"><span>Введите ваши данные </span>в форму ниже</p>
-                                <form method="post" action="" class="orderFormWrapper">
-								<input type="hidden" name="subid" value="0"/>
-								
-                                    <div class="c-s"><input type="hidden" name="country_code" value="RU"></div>
-                                    <input class="input-form input-form--all" type="text" name="name" placeholder="Ваше имя" >
-                                    <input class="input-form input-form--all" type="text" name="phone" placeholder="Ваш номер телефона" id="phone">
-                                   
-                                    <button class="submit-form submit-form--all" type="submit">Получить
-                                        <br>Диалайн</button>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-        <!--end popup-callback-->
-        <!--popup-phone-->
-
-
-        <!-- <div class="popup-phone">
-            <div class="close-modal"></div>
-            <div class="mod">
-                <div class="close-phone"></div>
-                <div class="sale--mob">
-                    <div class="sale-wrap--mob">
-                        <p class="sale-product-title--mob">скидка!</p>
-                        <p class="sale-product--mob">-50%</p>
-                    </div>
-                    <p class="clear"></p>
-                </div>
-                <div class="form-wrapper">
-                    <div class="form-wrapper--bg">
-                        <div class="form-right--all">
-                            <p class="form-main-title--all">Диалайн – средство для
-                                <br>борьбы с диабетом</p>
-                            <div class="sale-price-wrap">
-                                <div class="sale-wrap--all">
-                                    <p class="sale-product-title--all">скидка!</p>
-                                    <p class="sale-product--all">-50%</p>
-                                </div>
-                                <div class="wrap-price--all">
-                                    <div class="price-old-wrap--all">
-                                        <p class="price-old-text--top">Только до:</p>
-                                    <p class="price-old-x--top"><span class="x_price_previous "><script>d=new Date();p=new Date(d.getTime()-(0));monthA=['01','02','03','04','05','06','07','08','09','10','11','12'];document.write(p.getDate()+'.'+monthA[p.getMonth()]+'.'+p.getFullYear());</script></span> </p>
-                                    </div>
-                                    <div class="price-new-wrap--all">
-                                        <p class="price-new-text--all">Цена:</p>
-                                        <p class="price-new-x--all"><span><span class="landing___price__main_value">0</span> <span class="landing___price__currency">руб</span></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-sh">
-                                <p class="product-how-much"><span class="lastpack">60</span></p>
-                                <p class="product-sh--text">Количество товаров на
-                                    <br>ближайшем к Вам складе
-                                    <br>ограничено!</p>
-                            </div>
-                        </div>
-                        <div class="form-center--all"></div>
-                        <div class="form-left--all">
-                            <div class="form--all">
-                                <p class="form-title--all"><span>Введите ваши данные </span>в форму ниже</p>
-                                <form method="post" action="" class="orderFormWrapper">
-								<input type="hidden" name="subid" value="0"/>
-								
-                                    <div class="c-s"><input type="hidden" name="country_code" value="RU"></div>
-                                    <input class="input-form input-form--all" type="text" name="name" placeholder="Ваше имя" >
-                                    <input class="input-form input-form--all" type="text" name="phone" placeholder="Ваш номер телефона" id="phone">
-                                    
-                                    <button class="submit-form submit-form--all" type="submit">Получить
-                                        <br>Диалайн</button>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-        <!--popup-mouseleave-->
-
-
-        <!-- <div class="modal_mouse_out">
-            <div class="mod">
-                <div class="close-mouse"></div>
-                <div class="sale--mob">
-                    <div class="sale-wrap--mob">
-                        <p class="sale-product-title--mob">скидка!</p>
-                        <p class="sale-product--mob">-50%</p>
-                    </div>
-                    <p class="clear"></p>
-                </div>
-                <div class="form-wrapper">
-                    <div class="form-wrapper--bg">
-                        <div class="form-right--all">
-                            <p class="form-main-title--all">Диалайн – средство для
-                                <br>борьбы с диабетом</p>
-                            <div class="sale-price-wrap">
-                                <div class="sale-wrap--all">
-                                    <p class="sale-product-title--all">скидка!</p>
-                                    <p class="sale-product--all">-50%</p>
-                                </div>
-                                <div class="wrap-price--all">
-                                    <div class="price-old-wrap--all">
-                                        <p class="price-old-text--top">Только до:</p>
-                                    <p class="price-old-x--top"><span class="x_price_previous "><script>d=new Date();p=new Date(d.getTime()-(0));monthA=['01','02','03','04','05','06','07','08','09','10','11','12'];document.write(p.getDate()+'.'+monthA[p.getMonth()]+'.'+p.getFullYear());</script></span> </p>
-                                    </div>
-                                    <div class="price-new-wrap--all">
-                                        <p class="price-new-text--all">Цена:</p>
-                                        <p class="price-new-x--all"><span><span class="landing___price__main_value">0</span> <span class="landing___price__currency">руб</span></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-sh">
-                                <p class="product-how-much"><span class="lastpack">60</span></p>
-                                <p class="product-sh--text">Количество товаров на
-                                    <br>ближайшем к Вам складе
-                                    <br>ограничено!</p>
-                            </div>
-                        </div>
-                        <div class="form-center--all"></div>
-                        <div class="form-left--all">
-                            <div class="form--all">
-                                <p class="form-title--all"><span>Введите ваши данные </span>в форму ниже</p>
-                                <form method="post" action="" class="orderFormWrapper">
-								<input type="hidden" name="subid" value="0"/>
-								
-                                    <div class="c-s"><input type="hidden" name="country_code" value="RU"></div>
-                                    <input class="input-form input-form--all" type="text" name="name" placeholder="Ваше имя" >
-                                    <input class="input-form input-form--all" type="text" name="phone" placeholder="Ваш номер телефона" id="phone">
-                                    
-                                    <button class="submit-form submit-form--all" type="submit">Получить
-                                        <br>Диалайн</button>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!--phone-call-->
         <div class="phone-call cbh-phone cbh-green cbh-show cbh-static" id="clbh_phone_div" data-click="true" data-target=".modal_mouse_out">
             <a href="#" class="phoneJs">
                 <div class="cbh-ph-circle"></div>
@@ -933,648 +738,11 @@ else{
     <div class="mouse">
         <div class="line_top mouse_moved"></div>
     </div>
-    
-    <style>
-    .ma1-helper-modal {
-        display: none;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000;
-    }
-    
-    .ma1-helper-modal .ma1-modal-block {
-        background-color: rgb(0, 0, 0);
-        margin: 10%;
-        padding: 50px;
-        overflow-y: scroll;
-        max-height: 70%;
-        color: #fff;
-    }
-    
-    .ma1-helper-modal .ma1-modal-block .ma1-title {
-        color: #fff;
-        font-weight: 600;
-        font-size: 24px;
-        margin: 0 0 20px 0;
-    }
-    
-    .ma1-helper-modal .ma1-modal-block p {
-        margin: 5px 0;
-        line-height: 1.42857;
-    }
-    
-    .ma1-app-footer-links {
-        text-align: center;
-    }
-    
-    .show-message,
-    .show-message__info {
-        font-family: sans-serif
-    }
-    
-    .plugins-sprite,
-    .show-message__info,
-    .show-message__inner {
-        display: inline-block;
-        vertical-align: middle
-    }
-    
-    .mouse_moved {
-        position: fixed
-    }
-    
-    .line_top {
-        width: 100%;
-        height: 10px;
-        top: 0;
-        z-index: 11
-    }
-    
-    .show-message>div:after,
-    .show-message>div:before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: -15px;
-        width: 15px;
-        height: 5px;
-        background: red
-    }
-    
-    .blink {
-        color: red!important;
-        animation-name: blinker;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: blinker;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-name: blinker;
-        -moz-animation-duration: 1s;
-        -moz-animation-timing-function: linear;
-        -moz-animation-iteration-count: infinite;
-        text-decoration: line-through
-    }
-    
-    .show-message p {
-        margin: 0!important
-    }
-    
-    .show-message>div:before {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg)
-    }
-    
-    .show-message>div:after {
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg)
-    }
-    
-    .plugins-sprite {
-        background: url(data:image/png;base64,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) no-repeat;
-        width: 50px;
-        height: 60px;
-        margin-right: 5px
-    }
-    
-    .plugins-sprite-bucket {
-        background-position: -5px -5px
-    }
-    
-    .plugins-sprite-callback {
-        background-position: -65px -5px
-    }
-    
-    .plugins-sprite-online_user {
-        background-position: -5px -65px
-    }
-    
-    .show-message__info {
-        width: 248px;
-        line-height: normal;
-        color: #fff;
-        margin-bottom: 0;
-        font-size: 19px
-    }
-    
-    .show-message__info span {
-        font-size: 20px;
-        font-family: sans-serif;
-        color: #fff
-    }
-    
-    .show-message__left {
-        font-size: 14px
-    }
-    
-    .show-message__left span {
-        font-size: 15px
-    }
-    
-    .show-message_call {
-        background-color: #363636
-    }
-    
-    #ouibounce-modal,
-    .show-message__item {
-        background-color: rgba(0, 0, 0, .9)
-    }
-    
-    .package_left,
-    .package_left span {
-        font-size: 15px!important
-    }
-    
-    .show-message__inner {
-        line-height: 90px
-    }
-    
-    .show-message__item {
-        cursor: pointer;
-        position: fixed;
-        right: 20px;
-        top: 120px;
-        width: 318px;
-        color: #fff;
-        padding: 5px;
-        font-size: 14px;
-        line-height: 90px;
-        border-radius: 10px;
-        z-index: 98
-    }
-    
-    .cbh-ph-circle,
-    .cbh-phone {
-        background-color: transparent
-    }
-    
-    .cbh-ph-circle,
-    .cbh-ph-circle-fill {
-        border-radius: 100%;
-        position: absolute
-    }
-    
-    .lost_position {
-        display: none!important;
-        opacity: 0!important
-    }
-    
-    .block_position {
-        display: block!important;
-        opacity: 1!important
-    }
-    
-    .popup-off {
-        display: none!important;
-        opacity: 0!important;
-        visibility: hidden!important
-    }
-    
-    @media screen and (max-width:767px) {
-        .show-message__info {
-            width: 230px
-        }
-        .show-message__item {
-            top: auto;
-            right: 10px;
-            bottom: 10px;
-            width: 300px
-        }
-    }
-    
-    @media screen and (max-width:319px) {
-        .show-message__item {
-            width: 225px
-        }
-        .show-message__info {
-            width: 155px;
-            font-size: 15px
-        }
-        .show-message__info span {
-            font-size: 17px
-        }
-        .show-message__icon {
-            width: 38px!important
-        }
-        .show-message__info br {
-            display: none
-        }
-    }
-    
-    @-webkit-keyframes blinker {
-        0%,
-        100% {
-            opacity: 1
-        }
-        50% {
-            opacity: 0
-        }
-    }
-    
-    @keyframes blinker {
-        0%,
-        100% {
-            opacity: 1
-        }
-        50% {
-            opacity: 0
-        }
-    }
-    
-    .cbh-phone {
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-        visibility: hidden;
-        width: 200px;
-        height: 200px;
-        cursor: pointer;
-        z-index: 99;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translateZ(0);
-        -webkit-transition: visibility .5s;
-        transition: visibility .5s
-    }
-    
-    .cbh-phone.cbh-show {
-        visibility: visible
-    }
-    
-    @-webkit-keyframes fadeInRight {
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0)
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none
-        }
-    }
-    
-    @keyframes fadeInRight {
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0)
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none
-        }
-    }
-    
-    @-webkit-keyframes fadeInRightBig {
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(2000px, 0, 0);
-            transform: translate3d(2000px, 0, 0)
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none
-        }
-    }
-    
-    @-webkit-keyframes fadeOutRight {
-        0% {
-            opacity: 1
-        }
-        100% {
-            opacity: 0;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0)
-        }
-    }
-    
-    @keyframes fadeOutRight {
-        0% {
-            opacity: 1
-        }
-        100% {
-            opacity: 0;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0)
-        }
-    }
-    
-    .fadeOutRight {
-        -webkit-animation-name: fadeOutRight;
-        animation-name: fadeOutRight
-    }
-    
-    .cbh-phone.cbh-static1 {
-        opacity: .6
-    }
-    
-    .cbh-phone.cbh-hover1 {
-        opacity: 1
-    }
-    
-    .cbh-ph-circle {
-        width: 160px;
-        height: 160px;
-        top: 20px;
-        left: 20px;
-        border: 2px solid rgba(30, 30, 30, .4);
-        opacity: .1;
-        -webkit-animation: cbh-circle-anim 1.2s infinite ease-in-out;
-        animation: cbh-circle-anim 1.2s infinite ease-in-out;
-        -webkit-transition: all .5s;
-        transition: all .5s
-    }
-    
-    .cbh-phone.cbh-active .cbh-ph-circle1 {
-        -webkit-animation: cbh-circle-anim 1.1s infinite ease-in-out!important;
-        animation: cbh-circle-anim 1.1s infinite ease-in-out!important
-    }
-    
-    .cbh-phone.cbh-static .cbh-ph-circle {
-        -webkit-animation: cbh-circle-anim 2.2s infinite ease-in-out!important;
-        animation: cbh-circle-anim 2.2s infinite ease-in-out!important
-    }
-    
-    .cbh-phone.cbh-hover .cbh-ph-circle {
-        border-color: #00aff2;
-        opacity: .5
-    }
-    
-    .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle {
-        border-color: #75eb50;
-        opacity: .5
-    }
-    
-    .cbh-phone.cbh-green .cbh-ph-circle {
-        opacity: .5
-    }
-    
-    .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle {
-        border-color: #ccc;
-        opacity: .5
-    }
-    
-    .cbh-phone.cbh-gray .cbh-ph-circle {
-        border-color: #75eb50;
-        opacity: .5
-    }
-    
-    .cbh-ph-circle-fill {
-        width: 100px;
-        height: 100px;
-        top: 50px;
-        left: 50px;
-        background-color: #000;
-        border: 2px solid transparent;
-        opacity: .1;
-        -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-        animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-        -webkit-transition: all .5s;
-        transition: all .5s
-    }
-    
-    .cbh-phone.cbh-active .cbh-ph-circle-fill {
-        -webkit-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out!important;
-        animation: cbh-circle-fill-anim 1.7s infinite ease-in-out!important
-    }
-    
-    .cbh-phone.cbh-static .cbh-ph-circle-fill {
-        -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out!important;
-        animation: cbh-circle-fill-anim 2.3s infinite ease-in-out!important;
-        opacity: 0!important
-    }
-    
-    .cbh-phone.cbh-hover .cbh-ph-circle-fill {
-        background-color: rgba(0, 175, 242, .5);
-        opacity: .75!important
-    }
-    
-    .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle-fill {
-        background-color: rgba(117, 235, 80, .5);
-        opacity: .75!important
-    }
-    
-    .cbh-phone.cbh-green .cbh-ph-circle-fill {
-        opacity: .75!important
-    }
-    
-    .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill {
-        background-color: rgba(204, 204, 204, .5);
-        opacity: .75!important
-    }
-    
-    .cbh-phone.cbh-gray .cbh-ph-circle-fill {
-        background-color: rgba(117, 235, 80, .5);
-        opacity: .75!important
-    }
-    
-    .cbh-ph-img-circle1 {
-        width: 60px;
-        height: 60px;
-        top: 70px;
-        left: 70px;
-        position: absolute;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==);
-        background-color: rgba(30, 30, 30, .1);
-        background-position: center center;
-        background-repeat: no-repeat;
-        border-radius: 100%;
-        border: 2px solid transparent;
-        opacity: .7;
-        -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out;
-        animation: cbh-circle-img-anim 1s infinite ease-in-out
-    }
-    
-    .cbh-phone.cbh-active .cbh-ph-img-circle1 {
-        -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out!important;
-        animation: cbh-circle-img-anim 1s infinite ease-in-out!important
-    }
-    
-    .cbh-phone.cbh-static .cbh-ph-img-circle1 {
-        -webkit-animation: cbh-circle-img-anim 0s infinite ease-in-out!important;
-        animation: cbh-circle-img-anim 0s infinite ease-in-out!important
-    }
-    
-    .cbh-phone.cbh-hover .cbh-ph-img-circle1 {
-        background-color: #00aff2
-    }
-    
-    .cbh-phone.cbh-green.cbh-hover .cbh-ph-img-circle1:hover {
-        background-color: #75eb50
-    }
-    
-    .cbh-phone.cbh-gray.cbh-hover .cbh-ph-img-circle1 {
-        background-color: #ccc
-    }
-    
-    .cbh-phone.cbh-gray .cbh-ph-img-circle1 {
-        background-color: #75eb50
-    }
-    
-    @-webkit-keyframes cbh-circle-anim {
-        0% {
-            -webkit-transform: rotate(0) scale(.5) skew(1deg);
-            -webkit-opacity: .1
-        }
-        30% {
-            -webkit-transform: rotate(0) scale(.7) skew(1deg);
-            -webkit-opacity: .5
-        }
-        100% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg);
-            -webkit-opacity: .1
-        }
-    }
-    
-    @keyframes cbh-circle-anim {
-        0% {
-            -webkit-transform: rotate(0) scale(.5) skew(1deg);
-            transform: rotate(0) scale(.5) skew(1deg);
-            opacity: .1
-        }
-        30% {
-            -webkit-transform: rotate(0) scale(.7) skew(1deg);
-            transform: rotate(0) scale(.7) skew(1deg);
-            opacity: .5
-        }
-        100% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg);
-            transform: rotate(0) scale(1) skew(1deg);
-            opacity: .1
-        }
-    }
-    
-    @-webkit-keyframes cbh-circle-fill-anim {
-        0%,
-        100% {
-            -webkit-transform: rotate(0) scale(.7) skew(1deg);
-            opacity: .2
-        }
-        50% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg);
-            opacity: .2
-        }
-    }
-    
-    @keyframes cbh-circle-fill-anim {
-        0%,
-        100% {
-            -webkit-transform: rotate(0) scale(.7) skew(1deg);
-            transform: rotate(0) scale(.7) skew(1deg);
-            opacity: .2
-        }
-        50% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg);
-            transform: rotate(0) scale(1) skew(1deg);
-            opacity: .2
-        }
-    }
-    
-    @keyframes cbh-circle-img-anim {
-        0%,
-        100%,
-        50% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg);
-            transform: rotate(0) scale(1) skew(1deg)
-        }
-        10%,
-        30% {
-            -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-            transform: rotate(-25deg) scale(1) skew(1deg)
-        }
-        20%,
-        40% {
-            -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-            transform: rotate(25deg) scale(1) skew(1deg)
-        }
-    }
-    
-    @-webkit-keyframes cbh-circle-img-anim {
-        0%,
-        100%,
-        50% {
-            -webkit-transform: rotate(0) scale(1) skew(1deg)
-        }
-        10%,
-        30% {
-            -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
-        }
-        20%,
-        40% {
-            -webkit-transform: rotate(25deg) scale(1) skew(1deg)
-        }
-    }
-    
-    .cbh-phone.cbh-green .cbh-ph-circle {
-        border-color: #00aff2
-    }
-    
-    .cbh-phone.cbh-green .cbh-ph-circle-fill,
-    .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-        background-color: #00aff2
-    }
-    
-    @media screen and (max-width:991px) {
-        #clbh_phone_div {
-            display: none!important
-        }
-    }
-    </style>
-    <!-- <script type="text/javascript">
-    $(document).ready(function() {
 
-        $('.confident-link').click(function() {
-            $('.hidden-conf').show();
-            if ($(window).height() < 760) {
-                $('.conf-info').css({
-                    'height': ($(window).height() - 120),
-                    'overflow-y': 'scroll'
-                });
-            };
-            return false;
-        });
-        $('.close-conf').click(function() {
-            $('.hidden-conf').hide();
-            return false;
-        });
-        if ($('select').length) {} else {
-            $('.c-s').css({
-                'display': 'none'
-            })
-        }
+             
 
-
-    });
-    </script> -->
-    <!-- <script type='text/javascript' src='http://www.rocketprofit.ru/getlandingscript.php?site_id=1'></script> -->
-     <!-- <script>
-     		function rp_form_gap(){
-     			var forms = window.document.getElementsByTagName("form");
-     			for (var i = 0; i < forms.length; i++) {
-     				forms[i].addEventListener("submit", function (e) {
-     					e.preventDefault();
-     					alert('Это демо-страница! С нее нельзя отправить заказ.');
-     				});
-     			}
-     		}
-     		if (document.readyState === "complete") {
-     			rp_form_gap();
-     		}
-     		else {
-     			window.addEventListener("load", function(){
-     				rp_form_gap();
-     			});
-     		}</script> -->
-
-             <script src="Project_Name/js/another.js"></script>
+    <script src="Project_Name/js/another.js"></script>
+    <script src="Project_Name/js/main.js"></script>
 </body>
 
 </html>
